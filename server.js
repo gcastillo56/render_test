@@ -100,6 +100,8 @@ app.route("/task/:dir.:pos").get((req, res) => {
   }
 });
 
-app.listen(5000, () => {
+const port = process.env.PORT || 3000;
+
+app.listen(port, () => {
   console.log("Example app listening on port 5000");
 });
