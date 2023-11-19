@@ -64,3 +64,7 @@ This route will only be accesible via Postman.
   - return html: /
   - return json: GET /task
   - redirect: DELETE /task
+
+old
+-- build: yarn
+-- start: node server.js
