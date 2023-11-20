@@ -2,6 +2,9 @@
 
 https://dev.to/gregpetropoulos/render-deployment-free-tier-of-mern-app-52mk
 
+monorepo
+https://render.com/docs/monorepo-support
+
 old
 -- build: yarn
 -- start: node server.js

@@ -13,16 +13,17 @@ function Login(props) {
         [name]: value,
       };
     });
-    console.log(userProfile);
+    //console.log(userProfile);
   }
 
   function submitForm(event) {
     axios
-      .post("/login", {
+      .post("/api/login", {
         user: userProfile.user,
         pass: userProfile.password,
       })
       .then((res) => {
+        console.log(res);
         console.log(res.data);
         if (res.data.statusCode === 1) {
           console.log("You are logged in");
