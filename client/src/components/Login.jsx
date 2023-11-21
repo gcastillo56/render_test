@@ -17,8 +17,13 @@ function Login(props) {
   }
 
   function submitForm(event) {
+    console.log(process.env);
+    var apiPath = "";
+    if (process.env.NODE_ENV === "production") {
+      apiPath = "/api";
+    }
     axios
-      .post("/api/login", {
+      .post(apiPath + "/login", {
         user: userProfile.user,
         pass: userProfile.password,
       })
